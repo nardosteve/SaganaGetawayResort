@@ -13,7 +13,7 @@
                <div class="col-md-12">
                   <div class="text-bg">
                      <div class="padding_lert">
-                        <h1>WELCOME TO SAGANA GETAWAY RESORT, </h1>
+                        <h1>WELCOME TO SAGANA GETAWAY RESORT</h1>
                         <span>Welcome to 2022!</span>
                         <p>
                             Sagana Getaway Resort is located 13 mi from Sagana and 57 mi from

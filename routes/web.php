@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\CustomerDataController;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\DashboardEmployeeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,9 +22,10 @@ Route::get('/', function () {
 
 Route::resource('/customer-data', CustomerDataController::class)->only('store');
 
+Route::get('/employees', [DashboardEmployeeController::class, 'index'])->name('dasboard.employees');
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+Route::get('/dashboards', [DashboardController::class, 'index'])->middleware(['auth'])->name('dashboards');
+
+
 
 require __DIR__ . '/auth.php';
