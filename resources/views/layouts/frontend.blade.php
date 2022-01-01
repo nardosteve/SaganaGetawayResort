@@ -20,6 +20,5 @@
     </div>
 
 </body>
-    @include('partials.frontend.footer')
     @include('partials.frontend.js')
 </html>

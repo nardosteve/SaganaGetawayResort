@@ -12,7 +12,7 @@
       <meta name="author" content="">
       <!-- bootstrap css -->
       <!-- fevicon -->
-      <link rel="icon" href="frontend/images/fevicon.png" type="image/gif" />
+      <link rel="icon" href="frontend/images/logo/logo.ico" type="image/gif" />
       <!-- Scrollbar Custom CSS -->
       <link rel="stylesheet" href="frontend/css/jquery.mCustomScrollbar.min.css">
       <!-- Tweaks for older IEs-->

@@ -13,14 +13,15 @@
                <div class="col-md-12">
                   <div class="text-bg">
                      <div class="padding_lert">
-                        <h1>WELCOME TO SAGANA GETAWAY RESORT </h1>
+                        <h1>WELCOME TO SAGANA GETAWAY RESORT, </h1>
                         <span>Welcome to 2022!</span>
                         <p>
                             Sagana Getaway Resort is located 13 mi from Sagana and 57 mi from
                              Jomo Kenyatta International Airport. Mount Kenya National Reserve
                               is 70 mi from the property.
                         </p>
-                        <a href="#">Read More</a>
+                        <a  style="background-color: orange;" href="{{ route('register') }}">Signup</a>
+                        <a style="background-color: green;" href="{{ route('login') }}">Signin</a>
                      </div>
                   </div>
                </div>
@@ -245,6 +246,59 @@
          </div>
       </div>
       <!-- end testimonial -->
+            <!--  footer -->
+      <footer id="contact">
+         <div class="footer">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-6">
+                     <div class="titlepage">
+                        <h2>Contact Us</h2>
+                     </div>
+                     <div class="cont">
+                        <h3>Sagana Getaway Resort</h3>
+                        <p>Say something to us, we are here to serve you!</p>
+                     </div>
+                  </div>
+
+                  <div class="col-md-6">
+                     <form id="request" class="main_form" action="{{ route('customer-data.store') }}" method="POST">
+                         @csrf
+                         @method('POST')
+                        <div class="row">
+                           <div class="col-md-12 ">
+                              <input class="contactus" id="fullnames" name="fullnames" placeholder="Full Name" type="type" name="Full Name"> 
+                           </div>
+                           <div class="col-md-12">
+                              <input class="contactus" id="email" name="email" placeholder="Email" type="type" name="Email"> 
+                           </div>
+                           <div class="col-md-12">
+                              <input class="contactus" id="phonenumber" name="phonenumber" placeholder="Phone Number" type="type" name="Phone Number">                          
+                           </div>
+                           <div class="col-md-12">
+                              <textarea class="textarea" id="message" name="message" placeholder="Message" type="type"></textarea>
+                           </div>
+                           <div class="col-sm-12">
+                              <button type="submit" class="send_btn">Send</button>
+                           </div>
+                        </div>
+                     </form>
+                  </div>
+
+               </div>
+            </div>
+            <div class="copyright">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <p>Copyright 2022 All Right Reserved By Sagana Geyaway Resort</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- end footer -->
 
   
    </body>
