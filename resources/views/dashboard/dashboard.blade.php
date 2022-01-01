@@ -335,7 +335,7 @@
             <div class="collapse" id="ui-basic">
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item"> <a class="nav-link" href="{{ route('dasboard.employees') }}">Employee List</a></li>
-                <li class="nav-item"> <a class="nav-link" href="">Add Employee</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{ route('dasboard.add-employee') }}">Add Employee</a></li>
               </ul>
             </div>
           </li>
@@ -676,7 +676,7 @@
                 <div class="card-body">
                   <div class="d-flex align-items-center justify-content-between justify-content-md-center justify-content-xl-between flex-wrap mb-4">
                     <div>
-                      <p class="mb-2 text-md-center text-lg-left">Total Employees</p>
+                      <p class="mb-2 text-md-center text-lg-left">Total Users</p>
                       <h1 class="mb-0">{{ count($users) }}</h1>
                     </div>
                     <i class="typcn typcn-briefcase icon-xl text-secondary"></i>
@@ -691,7 +691,7 @@
                 <div class="card-body">
                   <div class="d-flex align-items-center justify-content-between justify-content-md-center justify-content-xl-between flex-wrap mb-4">
                     <div>
-                      <p class="mb-2 text-md-center text-lg-left">Total Budget</p>
+                      <p class="mb-2 text-md-center text-lg-left">Total Employees</p>
                       <h1 class="mb-0">47,840</h1>
                     </div>
                     <i class="typcn typcn-chart-pie icon-xl text-secondary"></i>

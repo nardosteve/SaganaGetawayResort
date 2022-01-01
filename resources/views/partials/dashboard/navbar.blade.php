@@ -13,21 +13,24 @@
           <li class="nav-item nav-profile dropdown">
             <a class="nav-link" href="#" data-toggle="dropdown" id="profileDropdown">
               {{-- <img src="images/faces/face5.jpg" alt="profile"/> --}}
-              <span class="nav-profile-name">{{ Auth::user()->name }}</span>
+              <span class="nav-profile-name"></span>
             </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
               <a class="dropdown-item">
                 <i class="typcn typcn-cog-outline text-primary"></i>
                 Settings
               </a>
-              <a class="dropdown-item">
-                <i class="typcn typcn-eject text-primary"></i>
-                Logout
-              </a>
+              <form action="{{ route('logout') }}" method="POST">
+                @csrf
+                <a class="dropdown-item">
+                  <i href="{{ route('logout') }}" class="typcn typcn-eject text-primary"></i>
+                  Logout
+                </a>
+              </form>
             </div>
           </li>
           <li class="nav-item nav-user-status dropdown">
-              <p class="mb-0">Last login was {{ Auth()->user()->updated_at }}</p>
+              <p class="mb-0">Last login was, 12.30am</p>
           </li>
         </ul>
         <ul class="navbar-nav navbar-nav-right">

@@ -23,9 +23,9 @@ Route::get('/', function () {
 Route::resource('/customer-data', CustomerDataController::class)->only('store');
 
 Route::get('/employees', [DashboardEmployeeController::class, 'index'])->name('dasboard.employees');
+Route::get('/add-employee', [DashboardEmployeeController::class, 'create'])->name('dasboard.add-employee');
+Route::resource('/employee-data', DashboardEmployeeController::class)->only('store');
 
 Route::get('/dashboards', [DashboardController::class, 'index'])->middleware(['auth'])->name('dashboards');
-
-
 
 require __DIR__ . '/auth.php';

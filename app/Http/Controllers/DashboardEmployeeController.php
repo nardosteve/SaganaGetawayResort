@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Employee;
 use Illuminate\Http\Request;
 
 class DashboardEmployeeController extends Controller
@@ -25,6 +26,7 @@ class DashboardEmployeeController extends Controller
     public function create()
     {
         //
+        return view('dashboard.employee.add-employee');
     }
 
     /**
@@ -36,6 +38,9 @@ class DashboardEmployeeController extends Controller
     public function store(Request $request)
     {
         //
+        $employee = new Employee;
+
+        $national_id_path = $request->file('national_id')->store('nationalid', 's3');
     }
 
     /**
